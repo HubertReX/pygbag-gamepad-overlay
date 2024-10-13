@@ -1,0 +1,28 @@
+
+name: Deploy_to_GitHub_pages
+on: [workflow_dispatch]
+permissions:
+  contents: write
+
+jobs:
+  Deploy_to_GitHub_pages:
+    name: Build for Emscripten pygbag runtime and deploy to GitHub Pages
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+            ref: ${{ github.ref }}
+    - name: Checkout
+      run: |
+            python -m pip install pygbag
+            python -m pygbag --ume_block 0 --template gamepad_overlay.tmpl --no_opt --build $GITHUB_WORKSPACE/project/main.py
+    - name: replace str
+      id: replace_str
+      run: echo BRANCH=${GITHUB_REF//refs\/heads\//}  >> $GITHUB_OUTPUT
+    - name: "Upload to GitHub pages branch gh-pages"
+      uses: JamesIves/github-pages-deploy-action@v4.6.0
+      with:
+        branch: gh-pages
+        folder: project/build/web
+        target-folder: ${{ steps.replace_str.outputs.BRANCH }}
