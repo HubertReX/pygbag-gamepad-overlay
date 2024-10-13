@@ -2,7 +2,7 @@
 
 A template for pygbag that adds overlay that allows to emulated the use of gamepad when running Python (pygame-ce) game in web browser.
 
-Current template is replication of this solution: [mobile-gamepads]([mobile-gamepads_en-us](https://github.com/Blendify-Games/PublicGists/blob/main/pygame-web/mobile-gamepads_en-us.md))
+Current template is replication of this solution: [mobile-gamepads](https://github.com/Blendify-Games/PublicGists/blob/main/pygame-web/mobile-gamepads_en-us.md)
 
 Live demo: [link](https://hubertrex.github.io/pygbag-gamepad-overlay/main/demo.html)
 
