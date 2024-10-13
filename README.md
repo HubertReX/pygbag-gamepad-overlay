@@ -4,6 +4,10 @@ A template for pygbag that adds overlay that allows to emulated the use of gamep
 
 Current template is replication of this solution: [mobile-gamepads]([mobile-gamepads_en-us](https://github.com/Blendify-Games/PublicGists/blob/main/pygame-web/mobile-gamepads_en-us.md))
 
+Live demo: [link](https://hubertrex.github.io/pygbag-gamepad-overlay/main/demo.html)
+
+For test purposes, the detection of mobile browser is skipped and a mobile version is enforced (to actually show the overlay).
+
 ## Instructions
 
 Install dependencies:
