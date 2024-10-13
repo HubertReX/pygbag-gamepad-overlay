@@ -1,0 +1,71 @@
+#gamepad {
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50vh;
+}
+
+/* gamepad1 style*/
+#gamepad__1__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    width: 100%;
+    height: 100%;
+}
+
+#gamepad__1__dpad-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+#gamepad__1__actionbtn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: end;
+    margin-right: 10%;
+    width: 50%;
+}
+
+#gamepad__1__container button {
+    background-color: white;
+    display: block;
+    border-radius: 50%;
+    width: 45%;
+}
+
+#gamepad__1__container button.pressed {
+    background-color: red;
+}
+
+#gamepad__1__container button img {
+    width: 100%;
+}
+
+@media all and (orientation:portrait) {
+    #gamepad__1__container button {
+        width: 45%;
+    }
+}
+
+@media all and (orientation:landscape) {
+    #gamepad {
+        height: 40vh;
+    }
+    #gamepad__1__container button {
+        width: 20%;
+    }
+    #gamepad__1__dpad-container {
+        justify-content: start;
+        margin-left: 10%;
+    }
+}

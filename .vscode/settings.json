@@ -1,0 +1,33 @@
+{
+    "cSpell.words": [
+        "allowtransparency",
+        "dpad",
+        "emscripten",
+        "GAMECONTROLLERCONFIG",
+        "gamepads",
+        "JOYAXISMOTION",
+        "JOYBALLMOTION",
+        "JOYBUTTONDOWN",
+        "JOYBUTTONUP",
+        "JOYDEVICEADDED",
+        "JOYDEVICEREMOVED",
+        "JOYHATMOTION",
+        "KEYDOWN",
+        "leftshoulder",
+        "leftstick",
+        "linesize",
+        "midnightblue",
+        "mozallowfullscreen",
+        "msallowfullscreen",
+        "numaxes",
+        "numballs",
+        "numbuttons",
+        "numhats",
+        "Pygbag",
+        "rightshoulder",
+        "rightstick",
+        "royalblue",
+        "VIDEORESIZE",
+        "webkitallowfullscreen"
+    ]
+}
